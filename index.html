@@ -34,7 +34,6 @@
             overflow-x: hidden;
         }
 
-        /* Animated background particles */
         .bg-animation {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -69,7 +68,6 @@
             z-index: 1;
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0; left: 0; right: 0;
@@ -130,7 +128,6 @@
             width: 100%;
         }
 
-        /* Hero */
         .hero {
             padding: 160px 0 80px;
             text-align: center;
@@ -270,7 +267,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Stats Bar */
         .stats-bar {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -312,7 +308,6 @@
             letter-spacing: 1px;
         }
 
-        /* Sections */
         section {
             margin-bottom: 80px;
         }
@@ -345,7 +340,6 @@
             font-weight: 600;
         }
 
-        /* About */
         .about-text {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -371,7 +365,6 @@
             font-weight: 600;
         }
 
-        /* Achievements */
         .achievements-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -431,7 +424,6 @@
             color: var(--text);
         }
 
-        /* Experience */
         .timeline {
             position: relative;
             padding-left: 32px;
@@ -475,7 +467,7 @@
             align-items: flex-start;
             flex-wrap: wrap;
             gap: 12px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .job-title {
@@ -531,7 +523,6 @@
             font-weight: bold;
         }
 
-        /* Skills */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -597,7 +588,6 @@
             transform: translateY(-2px);
         }
 
-        /* Info Section */
         .info-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -638,7 +628,6 @@
             line-height: 1.5;
         }
 
-        /* CTA */
         .cta-section {
             background: linear-gradient(135deg, rgba(0, 212, 170, 0.08), rgba(99, 102, 241, 0.08));
             border: 1px solid var(--border);
@@ -684,7 +673,6 @@
             margin-right: auto;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 40px 0 60px;
@@ -701,7 +689,6 @@
 
         footer a:hover { color: var(--accent); }
 
-        /* Scroll animations */
         .reveal {
             opacity: 0;
             transform: translateY(40px);
@@ -713,7 +700,6 @@
             transform: translateY(0);
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2em; }
             .stats-bar { grid-template-columns: repeat(2, 1fr); }
@@ -739,7 +725,6 @@
 
     <div class="bg-animation"></div>
 
-    <!-- Navigation -->
     <nav>
         <div class="nav-inner">
             <div class="logo">Suhel<span>.</span></div>
@@ -755,27 +740,25 @@
 
     <div class="container">
 
-        <!-- Hero -->
         <div class="hero">
             <div class="hero-badge">
                 <span class="dot"></span>
                 Available for Opportunities
             </div>
             <h1>Suhel <span class="highlight">Mhali</span></h1>
-            <p class="subtitle">Senior Accountant &middot; Operations Manager &middot; Finance & Admin Professional<br>6+ Years in UAE | VAT & Corporate Tax Expert | WPS Payroll Specialist</p>
+            <p class="subtitle">Senior Accountant &middot; Operations & Admin Manager<br>6+ Years in UAE | Finance & Operations Expert</p>
             <div class="contact-bar">
-                <a href="mailto:malisuhel06@gmail.com">✉ malisuhel06@gmail.com</a>
-                <a href="https://linkedin.com/in/mhali-suhel-bb8597159" target="_blank">💼 LinkedIn</a>
-                <a href="tel:+971526539567">📱 +971 52 653 9567</a>
-                <span>📍 Dubai, UAE</span>
+                <a href="mailto:malisuhel06@gmail.com">Email: malisuhel06@gmail.com</a>
+                <a href="https://linkedin.com/in/mhali-suhel-bb8597159" target="_blank">LinkedIn</a>
+                <a href="tel:+971526539567">Phone: +971 52 653 9567</a>
+                <span>Location: Dubai, UAE</span>
             </div>
             <div class="cta-group">
-                <a href="mailto:malisuhel06@gmail.com" class="btn btn-primary">📧 Get In Touch</a>
-                <a href="https://linkedin.com/in/mhali-suhel-bb8597159" target="_blank" class="btn btn-secondary">💼 View LinkedIn</a>
+                <a href="mailto:malisuhel06@gmail.com" class="btn btn-primary">Get In Touch</a>
+                <a href="https://linkedin.com/in/mhali-suhel-bb8597159" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
             </div>
         </div>
 
-        <!-- Stats -->
         <div class="stats-bar reveal">
             <div class="stat-card">
                 <div class="number">6+</div>
@@ -786,16 +769,15 @@
                 <div class="label">Industries</div>
             </div>
             <div class="stat-card">
-                <div class="number">100%</div>
-                <div class="label">VAT Compliance</div>
-            </div>
-            <div class="stat-card">
                 <div class="number">30+</div>
                 <div class="label">Payroll Managed</div>
             </div>
+            <div class="stat-card">
+                <div class="number">100%</div>
+                <div class="label">Compliance Record</div>
+            </div>
         </div>
 
-        <!-- About -->
         <section id="about" class="reveal">
             <div class="section-header">
                 <span class="section-tag">01</span>
@@ -803,15 +785,10 @@
                 <div class="section-line"></div>
             </div>
             <div class="about-text">
-                Results-driven accounting and finance professional with over <strong>6 years of experience</strong> across the automotive and fitness industries in Dubai, UAE. I bring a strong track record in financial reporting, year-end closing, payroll management, and operational oversight.
-                <br><br>
-                Currently serving as <strong>Accountant at Icon Auto</strong>, I manage the full accounting cycle, ensuring accuracy, compliance, and timely reporting. Previously, as <strong>Operations Manager & Accountant at FIT BOYS GYM - DMCC</strong>, I combined financial accountability with operational leadership — overseeing budgets, vendor management, and team coordination.
-                <br><br>
-                Expert in full-cycle AP/AR, UAE VAT & Corporate Tax compliance, WPS payroll, financial reporting, and GL management. Equally skilled at leading teams, managing procurement, implementing SOPs, coordinating government documentation, and driving operational efficiency. Known for wearing multiple hats, delivering results in high-pressure environments, and contributing to business growth at every level.
+                Results-driven professional with over <strong>6 years of UAE experience</strong> across automotive, fitness, and service sectors. Equally adept at managing full-cycle accounting operations and leading cross-functional teams. Currently serving as <strong>Senior Accountant at Icon Auto</strong>, managing AP/AR, VAT compliance, and payroll for 30+ employees. Previously, as <strong>Operations Manager & Accountant at Fitboys Gym DMCC</strong>, restructured operations during a financial downturn and achieved business stability within 4 months. Expert in UAE VAT & Corporate Tax, WPS payroll, financial reporting, SOP implementation, staff management, procurement, and government compliance. Known for wearing multiple hats and delivering results in high-pressure environments.
             </div>
         </section>
 
-        <!-- Achievements -->
         <section id="achievements" class="reveal">
             <div class="section-header">
                 <span class="section-tag">02</span>
@@ -821,7 +798,7 @@
             <div class="achievements-grid">
                 <div class="achievement-card">
                     <div class="icon">🎯</div>
-                    <p><strong>Restructured operations and reformed policies</strong> at Fitboys Gym DMCC, enabling smooth business continuity and improved financial performance within 4 months.</p>
+                    <p><strong>Restructured operations and reformed policies</strong> at Fitboys Gym DMCC, enabling smooth business continuity and improved financial performance.</p>
                 </div>
                 <div class="achievement-card">
                     <div class="icon">✅</div>
@@ -846,7 +823,6 @@
             </div>
         </section>
 
-        <!-- Experience -->
         <section id="experience" class="reveal">
             <div class="section-header">
                 <span class="section-tag">03</span>
@@ -863,7 +839,7 @@
                         </div>
                         <div class="job-date">Jan 2025 – Present</div>
                     </div>
-                    <div class="job-desc">Manage full-cycle AP/AR, bank reconciliations, and journal entries while ensuring UAE VAT and Corporate Tax compliance. Process monthly WPS payroll for 30+ employees and prepare quarterly VAT returns with zero FTA penalties.</div>
+                    <div class="job-desc">Manage full-cycle AP/AR, bank reconciliations, and journal entries. Ensure UAE VAT and Corporate Tax compliance. Process monthly WPS payroll for 30+ employees.</div>
                     <ul>
                         <li>Process and verify 100+ supplier invoices monthly with 100% VAT compliance and internal authorization protocols</li>
                         <li>Execute monthly WPS payroll for 30+ employees including overtime, bonuses, and statutory deductions</li>
@@ -872,7 +848,7 @@
                         <li>Manage high-volume e-payments, bank transfers, and cheque disbursements with precise cash flow coordination</li>
                         <li>Generate monthly management accounts, KPI dashboards, and variance reports for senior management</li>
                         <li>Maintain fixed asset register for 50+ assets and complete vendor/customer master data for audit readiness</li>
-                        <li>Manage manufacturing supplier payments, raw material cost tracking, and production expense control</li>
+                        <li>Coordinate automotive parts supplier payments, workshop expense tracking, and service cost allocation to financial records</li>
                     </ul>
                 </div>
 
@@ -884,16 +860,16 @@
                         </div>
                         <div class="job-date">Jan 2024 – Dec 2024</div>
                     </div>
-                    <div class="job-desc">Took full ownership of accounting and operations for a DMCC-registered business — managing AP/AR, VAT filing, and monthly financial reporting alongside staff scheduling and vendor coordination. Implemented structured SOPs that improved audit readiness and team accountability.</div>
+                    <div class="job-desc">Led full operational and administrative leadership for a DMCC-registered fitness business. Managed staff, procurement, vendor relations, and facility operations alongside financial oversight.</div>
                     <ul>
-                        <li>Restructured operations and reformed policies, enabling smooth business continuity and improved financial performance</li>
-                        <li>Handled complete bookkeeping, monthly P&L, balance sheet, cash flow statements, and management reports using Zoho Books</li>
-                        <li>Prepared and filed UAE VAT returns with zero FTA penalties; maintained full supporting documentation</li>
-                        <li>Managed 20+ vendor accounts, processed payments, followed up on outstanding receivables</li>
-                        <li>Supervised 8 staff members — scheduling, leave tracking, performance management, and cross-departmental coordination</li>
-                        <li>Directed procurement, vendor sourcing, and contract negotiation, improving operational cost efficiency</li>
-                        <li>Implemented structured SOPs for accounting and admin workflows improving team accountability and audit readiness</li>
-                        <li>Partnered with a marketing agency to launch campaigns, supporting membership growth and business revenue</li>
+                        <li>Led full operational restructuring during a financial downturn, achieving business stability and improved performance within 4 months</li>
+                        <li>Managed and supervised 8 staff members including scheduling, leave tracking, performance management, and cross-departmental coordination</li>
+                        <li>Directed procurement, vendor sourcing, and contract negotiation for 20+ suppliers, improving operational cost efficiency</li>
+                        <li>Implemented structured SOPs for accounting and admin workflows, improving team accountability and audit readiness</li>
+                        <li>Oversaw facility management, inventory tracking, and daily operational execution across all departments</li>
+                        <li>Coordinated with a marketing agency to launch campaigns, supporting membership growth and revenue recovery</li>
+                        <li>Managed complete bookkeeping, monthly P&L, and management reports using Zoho Books</li>
+                        <li>Ensured full UAE VAT compliance with zero FTA penalties; maintained complete supporting documentation</li>
                     </ul>
                 </div>
 
@@ -905,7 +881,7 @@
                         </div>
                         <div class="job-date">Feb 2020 – Dec 2023</div>
                     </div>
-                    <div class="job-desc">Managed full accounting operations using Tally ERP9 — AP/AR, bank reconciliations, petty cash, and VAT filing with zero FTA penalties across 4 years. Coordinated PRO activities including visa processing and trade license renewals. Led planning and execution of 10+ large-scale events.</div>
+                    <div class="job-desc">Managed full accounting operations using Tally ERP9: AP/AR, bank reconciliations, petty cash, and VAT filing. Maintained zero FTA penalties for 4 years. Coordinated PRO activities and led 10+ large-scale events.</div>
                     <ul>
                         <li>Managed full AP/AR, bank reconciliations, petty cash, VAT filing, and month-end closing — zero FTA penalties across 4 years</li>
                         <li>Coordinated with PROs for visa processing, trade license renewals, and Dubai Municipality compliance — zero violations</li>
@@ -920,11 +896,10 @@
             </div>
         </section>
 
-        <!-- Skills -->
         <section id="skills" class="reveal">
             <div class="section-header">
                 <span class="section-tag">04</span>
-                <h2>Core Skills</h2>
+                <h2>Skills</h2>
                 <div class="section-line"></div>
             </div>
             <div class="skills-container">
@@ -959,6 +934,7 @@
                         <span class="skill-tag">Office Administration</span>
                         <span class="skill-tag">Inventory Management</span>
                         <span class="skill-tag">HR Policies</span>
+                        <span class="skill-tag">Event Planning</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -970,16 +946,6 @@
                         <span class="skill-tag">Government Liaison</span>
                         <span class="skill-tag">Compliance Documentation</span>
                         <span class="skill-tag">UAE Labour Law</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><span class="cat-icon">🎪</span> Events & Coordination</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Event Planning</span>
-                        <span class="skill-tag">Vendor Logistics</span>
-                        <span class="skill-tag">Budgeting</span>
-                        <span class="skill-tag">On-site Management</span>
-                        <span class="skill-tag">Marketing Support</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -995,22 +961,13 @@
                         <span class="skill-tag">Microsoft Office</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3><span class="cat-icon">🌐</span> Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">English (Professional)</span>
-                        <span class="skill-tag">Hindi (Native)</span>
-                        <span class="skill-tag">Kannada (Native)</span>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <!-- Info -->
         <section class="reveal">
             <div class="section-header">
                 <span class="section-tag">05</span>
-                <h2>Quick Info</h2>
+                <h2>Information</h2>
                 <div class="section-line"></div>
             </div>
             <div class="info-grid">
@@ -1021,13 +978,13 @@
                 </div>
                 <div class="info-card">
                     <div class="info-icon">🛂</div>
-                    <div class="info-label">Visa Status</div>
+                    <div class="info-label">Visa</div>
                     <div class="info-value">Valid UAE Employment Visa</div>
                 </div>
                 <div class="info-card">
                     <div class="info-icon">🚗</div>
-                    <div class="info-label">Driving License</div>
-                    <div class="info-value">Valid UAE License<br>(Until 2028)</div>
+                    <div class="info-label">License</div>
+                    <div class="info-value">Valid UAE Driving License<br>(Until 2028)</div>
                 </div>
                 <div class="info-card">
                     <div class="info-icon">📍</div>
@@ -1047,28 +1004,26 @@
             </div>
         </section>
 
-        <!-- CTA -->
         <section id="contact" class="reveal">
             <div class="cta-section">
                 <div class="cta-content">
                     <h2>Let's Work Together</h2>
                     <p>I'm currently open to Finance, Accounting, Operations, and Administrative leadership roles in the UAE — on-site or hybrid.</p>
                     <div class="cta-group" style="justify-content: center;">
-                        <a href="mailto:malisuhel06@gmail.com" class="btn btn-primary">📧 Get In Touch</a>
-                        <a href="https://linkedin.com/in/mhali-suhel-bb8597159" target="_blank" class="btn btn-secondary">💼 LinkedIn Profile</a>
+                        <a href="mailto:malisuhel06@gmail.com" class="btn btn-primary">Get In Touch</a>
+                        <a href="https://linkedin.com/in/mhali-suhel-bb8597159" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p>Suhel Mhali &middot; Dubai, UAE &middot; <a href="mailto:malisuhel06@gmail.com">malisuhel06@gmail.com</a></p>
+            <p>Suhel Mhali · Dubai, UAE</p>
         </footer>
 
     </div>
 
     <script>
-        // Scroll reveal animation
         const reveals = document.querySelectorAll('.reveal');
 
         const revealOnScroll = () => {
@@ -1084,9 +1039,8 @@
         };
 
         window.addEventListener('scroll', revealOnScroll);
-        revealOnScroll(); // Trigger on load
+        revealOnScroll();
 
-        // Smooth scroll for nav links
         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
