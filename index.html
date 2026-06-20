@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suhel Mhali | Finance & Operations Professional</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background: #f8f9fa; 
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        /* Header */
+        .header { 
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%); 
+            color: white; 
+            padding: 60px 40px; 
+            text-align: center; 
+            border-radius: 12px; 
+            margin-bottom: 30px; 
+        }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .header .tagline { 
+            font-size: 1.2em; 
+            opacity: 0.9; 
+            margin-bottom: 20px; 
+        }
+        .header .contact { 
+            display: flex; 
+            justify-content: center; 
+            gap: 25px; 
+            flex-wrap: wrap; 
+            margin-top: 20px; 
+        }
+        .header .contact a { 
+            color: #ffeb3b; 
+            text-decoration: none; 
+            font-weight: 500; 
+        }
+        .header .contact a:hover { text-decoration: underline; }
+        
+        /* Sections */
+        .section { 
+            background: white; 
+            padding: 35px 40px; 
+            margin-bottom: 25px; 
+            border-radius: 12px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+        }
+        .section h2 { 
+            color: #1a237e; 
+            font-size: 1.5em; 
+            margin-bottom: 20px; 
+            padding-bottom: 10px; 
+            border-bottom: 3px solid #ffeb3b; 
+            display: inline-block; 
+        }
+        
+        /* Summary */
+        .summary { font-size: 1.05em; color: #555; }
+        
+        /* Achievements */
+        .achievements { display: grid; gap: 15px; }
+        .achievement { 
+            display: flex; 
+            align-items: flex-start; 
+            gap: 15px; 
+            padding: 15px; 
+            background: #f8f9fa; 
+            border-radius: 8px; 
+            border-left: 4px solid #1a237e; 
+        }
+        .achievement-icon { 
+            font-size: 1.5em; 
+            min-width: 30px; 
+            text-align: center; 
+        }
+        .achievement-text { flex: 1; }
+        
+        /* Experience */
+        .job { margin-bottom: 30px; }
+        .job:last-child { margin-bottom: 0; }
+        .job-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            flex-wrap: wrap; 
+            margin-bottom: 12px; 
+        }
+        .job-title { 
+            font-size: 1.2em; 
+            font-weight: 700; 
+            color: #1a237e; 
+        }
+        .job-company { 
+            color: #666; 
+            font-weight: 500; 
+            margin-top: 3px; 
+        }
+        .job-date { 
+            color: #888; 
+            font-size: 0.9em; 
+            background: #f0f0f0; 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+        }
+        .job-desc { 
+            color: #555; 
+            margin-bottom: 12px; 
+            font-style: italic; 
+        }
+        .job ul { 
+            margin-left: 20px; 
+            color: #444; 
+        }
+        .job ul li { margin-bottom: 8px; }
+        
+        /* Skills */
+        .skills-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px; 
+        }
+        .skill-category h3 { 
+            color: #1a237e; 
+            font-size: 1.1em; 
+            margin-bottom: 10px; 
+        }
+        .skill-tags { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 8px; 
+        }
+        .skill-tag { 
+            background: #e8eaf6; 
+            color: #1a237e; 
+            padding: 6px 14px; 
+            border-radius: 20px; 
+            font-size: 0.9em; 
+            font-weight: 500; 
+        }
+        
+        /* Info Grid */
+        .info-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 20px; 
+        }
+        .info-item { text-align: center; padding: 15px; }
+        .info-item .label { 
+            color: #888; 
+            font-size: 0.85em; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            margin-bottom: 5px; 
+        }
+        .info-item .value { 
+            color: #1a237e; 
+            font-weight: 600; 
+            font-size: 1.1em; 
+        }
+        
+        /* CTA */
+        .cta { 
+            text-align: center; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%); 
+            color: white; 
+            border-radius: 12px; 
+        }
+        .cta h2 { 
+            color: white; 
+            border-bottom: 3px solid #ffeb3b; 
+            margin-bottom: 15px; 
+        }
+        .cta p { margin-bottom: 20px; opacity: 0.9; }
+        .cta-btn { 
+            display: inline-block; 
+            background: #ffeb3b; 
+            color: #1a237e; 
+            padding: 14px 35px; 
+            border-radius: 30px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            font-size: 1.1em; 
+            transition: transform 0.2s; 
+        }
+        .cta-btn:hover { transform: scale(1.05); }
+        
+        /* Footer */
+        .footer { 
+            text-align: center; 
+            padding: 20px; 
+            color: #888; 
+            font-size: 0.9em; 
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header { padding: 40px 20px; }
+            .header h1 { font-size: 1.8em; }
+            .section { padding: 25px 20px; }
+            .job-header { flex-direction: column; }
+            .job-date { margin-top: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Suhel Mhali</h1>
+        <div class="tagline">Senior Accountant | Operations Manager | Admin & Executive Support</div>
+        <div class="contact">
+            <a href="mailto:malisuhel06@gmail.com">📧 malisuhel06@gmail.com</a>
+            <a href="https://linkedin.com/in/mhali-suhel-bb8597159" target="_blank">💼 LinkedIn</a>
+            <a href="tel:+971526539567">📱 +971 52 653 9567</a>
+            <span>📍 Dubai, UAE</span>
+        </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <p class="summary">
+            Highly versatile UAE-based professional with <strong>6+ years of progressive experience</strong> spanning 
+            <strong>accounting, operations management, administration, executive support, and event coordination</strong> 
+            across automotive, fitness, and service sectors. Expert in full-cycle AP/AR, UAE VAT & Corporate Tax compliance, 
+            WPS payroll, financial reporting, and GL management. Equally skilled at leading teams, managing procurement, 
+            implementing SOPs, coordinating government documentation, and driving operational efficiency. Known for wearing 
+            multiple hats, delivering results in high-pressure environments, and contributing to business growth at every level.
+        </p>
+    </div>
+
+    <!-- Key Achievements -->
+    <div class="section">
+        <h2>Key Achievements</h2>
+        <div class="achievements">
+            <div class="achievement">
+                <div class="achievement-icon">💰</div>
+                <div class="achievement-text">
+                    <strong>Turned a loss-making business to break-even within 4 months</strong> at Fitboys Gym DMCC through cost restructuring, operational improvements, and financial analysis.
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">✅</div>
+                <div class="achievement-text">
+                    <strong>Achieved 100% UAE VAT compliance with zero FTA penalties</strong> across all roles spanning 6+ years.
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">📊</div>
+                <div class="achievement-text">
+                    <strong>Streamlined bank reconciliations</strong> at Icon Auto Garage, reducing monthly closing time by 30%.
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">🎯</div>
+                <div class="achievement-text">
+                    <strong>Successfully coordinated 10+ large-scale events</strong> within budget at Ringside Gym — full planning, vendor sourcing, negotiation, and on-site execution.
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">📋</div>
+                <div class="achievement-text">
+                    <strong>Implemented SOPs across 3 UAE businesses</strong> improving data accuracy, team efficiency, and audit readiness.
+                </div>
+            </div>
+            <div class="achievement">
+                <div class="achievement-icon">💵</div>
+                <div class="achievement-text">
+                    <strong>Built reliable supplier networks in Dubai</strong> reducing service delays and achieving <strong>AED 40,000–80,000 in annual cost savings</strong> through strategic negotiation.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="section">
+        <h2>Work Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Senior Accountant</div>
+                    <div class="job-company">Icon Auto Garage | Dubai</div>
+                </div>
+                <div class="job-date">Jan 2025 – Jun 2026</div>
+            </div>
+            <div class="job-desc">Managed full-cycle AP/AR, UAE VAT and Corporate Tax compliance, and WPS payroll for 30+ employees. Coordinated daily operations between finance, procurement, and workshop departments.</div>
+            <ul>
+                <li>Processed 100+ supplier invoices monthly with 100% VAT compliance and full internal authorization protocols</li>
+                <li>Executed monthly WPS payroll for 30+ employees including overtime, bonuses, and statutory deductions</li>
+                <li>Performed monthly reconciliations of 15+ bank accounts, supplier accounts, credit cards, and GL balances</li>
+                <li>Prepared and filed quarterly UAE VAT returns and Corporate Tax documentation — zero FTA penalties</li>
+                <li>Managed AED 500,000+ in monthly e-payments, bank transfers, and cheque disbursements</li>
+                <li>Generated monthly management accounts, KPI dashboards, and variance reports for senior management</li>
+                <li>Maintained fixed asset register for 50+ assets and complete vendor/customer master data for audit readiness</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Operations Manager & Accountant</div>
+                    <div class="job-company">Fitboys Gym DMCC | JLT, Dubai</div>
+                </div>
+                <div class="job-date">Jan 2024 – Dec 2024</div>
+            </div>
+            <div class="job-desc">Appointed during financial downturn — assessed full operations and achieved business break-even within 4 months. Managed complete accounting alongside full operational and administrative leadership.</div>
+            <ul>
+                <li>Achieved break-even within 4 months through cost restructuring, vendor renegotiation, and operational efficiency</li>
+                <li>Managed complete bookkeeping, monthly P&L, balance sheet, cash flow statements, and management reports using Zoho Books</li>
+                <li>Prepared and filed UAE VAT returns with zero FTA penalties; maintained full supporting documentation</li>
+                <li>Managed 20+ vendor accounts, processed payments, followed up on AED 200,000+ in outstanding receivables</li>
+                <li>Supervised 8 staff members — scheduling, leave tracking, performance management, and cross-departmental coordination</li>
+                <li>Directed procurement, vendor sourcing, and contract negotiation — achieving AED 80,000+ in annual cost savings</li>
+                <li>Implemented structured SOPs for accounting and admin workflows improving team accountability and audit readiness</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Accountant / Admin Executive & Event Coordinator</div>
+                    <div class="job-company">Ringside Gym | Dubai</div>
+                </div>
+                <div class="job-date">Feb 2020 – Dec 2023</div>
+            </div>
+            <div class="job-desc">Managed all accounting, administrative, PRO, and event coordination functions in a high-traffic sports environment using Tally ERP9. Served as the all-round operational backbone for nearly 4 years.</div>
+            <ul>
+                <li>Managed full AP/AR, bank reconciliations, petty cash, VAT filing, and month-end closing — zero FTA penalties across 4 years</li>
+                <li>Coordinated with PROs for visa processing, trade license renewals, and Dubai Municipality compliance — zero violations</li>
+                <li>Led coordination of 10+ large-scale events — vendor sourcing, budgeting, negotiation, logistics, and on-site execution</li>
+                <li>Managed office administration, procurement for 25+ suppliers, inventory tracking, and facility maintenance</li>
+                <li>Processed 80+ invoices monthly, maintained aging reports, and minimized overdue balances</li>
+                <li>Covered front desk and customer service during staff shortages for 500+ monthly clients</li>
+                <li>Compiled complete documentation for internal and external audits ensuring full regulatory compliance</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Core Skills -->
+    <div class="section">
+        <h2>Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Finance & Accounting</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">AP/AR Management</span>
+                    <span class="skill-tag">General Ledger</span>
+                    <span class="skill-tag">UAE VAT Compliance</span>
+                    <span class="skill-tag">Corporate Tax</span>
+                    <span class="skill-tag">WPS Payroll</span>
+                    <span class="skill-tag">Bank Reconciliation</span>
+                    <span class="skill-tag">Fixed Assets</span>
+                    <span class="skill-tag">Cash Flow Management</span>
+                    <span class="skill-tag">IFRS Awareness</span>
+                    <span class="skill-tag">Financial Reporting</span>
+                    <span class="skill-tag">Budgeting & Variance</span>
+                    <span class="skill-tag">Audit Coordination</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Operations & Administration</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">SOP Implementation</span>
+                    <span class="skill-tag">Staff Management</span>
+                    <span class="skill-tag">Procurement</span>
+                    <span class="skill-tag">Facility Management</span>
+                    <span class="skill-tag">Document Control</span>
+                    <span class="skill-tag">Cross-functional Coordination</span>
+                    <span class="skill-tag">Office Administration</span>
+                    <span class="skill-tag">Inventory Management</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>PRO & Compliance</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Visa Processing</span>
+                    <span class="skill-tag">Trade License Renewals</span>
+                    <span class="skill-tag">Dubai Municipality</span>
+                    <span class="skill-tag">Government Liaison</span>
+                    <span class="skill-tag">Compliance Documentation</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Events & Coordination</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Event Planning</span>
+                    <span class="skill-tag">Vendor Logistics</span>
+                    <span class="skill-tag">Budgeting</span>
+                    <span class="skill-tag">On-site Management</span>
+                    <span class="skill-tag">Marketing Support</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Software & Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Zoho Books</span>
+                    <span class="skill-tag">Tally ERP 9</span>
+                    <span class="skill-tag">Odoo</span>
+                    <span class="skill-tag">Microsoft Excel (Advanced)</span>
+                    <span class="skill-tag">Power BI (Basic)</span>
+                    <span class="skill-tag">Pivot Tables</span>
+                    <span class="skill-tag">VLOOKUP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Info -->
+    <div class="section">
+        <h2>Additional Information</h2>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="label">Education</div>
+                <div class="value">BBA — Business Administration & Accounting<br>Bangalore, India (2016–2019)</div>
+            </div>
+            <div class="info-item">
+                <div class="label">Languages</div>
+                <div class="value">English (Professional)<br>Hindi (Native)<br>Kannada (Native)</div>
+            </div>
+            <div class="info-item">
+                <div class="label">Visa Status</div>
+                <div class="value">Valid UAE Employment Visa</div>
+            </div>
+            <div class="info-item">
+                <div class="label">Driving License</div>
+                <div class="value">Valid UAE License<br>(Until 2028)</div>
+            </div>
+            <div class="info-item">
+                <div class="label">Availability</div>
+                <div class="value">Available Immediately</div>
+            </div>
+            <div class="info-item">
+                <div class="label">Location</div>
+                <div class="value">Dubai, UAE</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta">
+        <h2>Let's Connect</h2>
+        <p>I'm currently available for new opportunities in accounting, operations, and administrative leadership roles across the UAE.</p>
+        <a href="mailto:malisuhel06@gmail.com" class="cta-btn">📧 Get In Touch</a>
+        <a href="https://linkedin.com/in/mhali-suhel-bb8597159" target="_blank" class="cta-btn" style="margin-left: 10px; background: white; color: #1a237e;">💼 LinkedIn</a>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Suhel Mhali | Dubai, UAE</p>
+    </div>
+
+</div>
+
+</body>
+</html>
