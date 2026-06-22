@@ -9,18 +9,21 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --bg: #0a0a0f;
-            --bg-card: #12121a;
-            --bg-elevated: #1a1a28;
-            --text: #f0f0f5;
-            --text-light: #a0a0b0;
-            --text-muted: #6a6a80;
-            --accent: #00d4aa;
-            --accent-glow: rgba(0, 212, 170, 0.15);
-            --accent2: #6366f1;
-            --accent2-glow: rgba(99, 102, 241, 0.15);
-            --border: rgba(255,255,255,0.06);
-            --border-hover: rgba(0, 212, 170, 0.3);
+            --bg: #0d1117;
+            --bg-card: #161b22;
+            --bg-elevated: #1c2128;
+            --text: #e6edf3;
+            --text-light: #8b949e;
+            --text-muted: #6e7681;
+            --accent: #58a6ff;
+            --accent-glow: rgba(88, 166, 255, 0.15);
+            --accent2: #a371f7;
+            --accent2-glow: rgba(163, 113, 247, 0.15);
+            --border: rgba(48, 54, 61, 0.6);
+            --border-hover: rgba(88, 166, 255, 0.4);
+            --cyan: #39d0d8;
+            --green: #3fb950;
+            --orange: #d29922;
         }
 
         html { scroll-behavior: smooth; }
@@ -50,7 +53,7 @@
             background: 
                 radial-gradient(circle at 20% 50%, var(--accent-glow) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, var(--accent2-glow) 0%, transparent 50%),
-                radial-gradient(circle at 50% 80%, rgba(0, 212, 170, 0.05) 0%, transparent 40%);
+                radial-gradient(circle at 50% 80%, rgba(57, 208, 216, 0.05) 0%, transparent 40%);
             animation: float 20s ease-in-out infinite;
         }
 
@@ -71,7 +74,7 @@
         nav {
             position: fixed;
             top: 0; left: 0; right: 0;
-            background: rgba(10, 10, 15, 0.8);
+            background: rgba(13, 17, 23, 0.85);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border);
             z-index: 100;
@@ -143,7 +146,7 @@
             padding: 8px 20px;
             border-radius: 100px;
             font-size: 0.85em;
-            color: var(--accent);
+            color: var(--green);
             font-weight: 500;
             margin-bottom: 32px;
             animation: fadeInUp 0.8s ease-out;
@@ -151,7 +154,7 @@
 
         .hero-badge .dot {
             width: 8px; height: 8px;
-            background: var(--accent);
+            background: var(--green);
             border-radius: 50%;
             animation: pulse 2s infinite;
         }
@@ -240,14 +243,14 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--accent), #00b894);
+            background: linear-gradient(135deg, var(--cyan), #2ea043);
             color: var(--bg);
-            box-shadow: 0 8px 32px rgba(0, 212, 170, 0.3);
+            box-shadow: 0 8px 32px rgba(57, 208, 216, 0.3);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(0, 212, 170, 0.4);
+            box-shadow: 0 12px 40px rgba(57, 208, 216, 0.4);
         }
 
         .btn-secondary {
@@ -582,7 +585,7 @@
         }
 
         .skill-tag:hover {
-            background: rgba(0, 212, 170, 0.1);
+            background: rgba(88, 166, 255, 0.1);
             border-color: var(--accent);
             color: var(--accent);
             transform: translateY(-2px);
@@ -629,7 +632,7 @@
         }
 
         .cta-section {
-            background: linear-gradient(135deg, rgba(0, 212, 170, 0.08), rgba(99, 102, 241, 0.08));
+            background: linear-gradient(135deg, rgba(88, 166, 255, 0.08), rgba(163, 113, 247, 0.08));
             border: 1px solid var(--border);
             border-radius: 24px;
             padding: 60px 40px;
@@ -749,12 +752,10 @@
             <p class="subtitle">Senior Accountant &middot; Operations & Admin Manager<br>6+ Years in UAE | Finance & Operations Expert</p>
             <div class="contact-bar">
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=malisuhel06@gmail.com" target="_blank">Email: malisuhel06@gmail.com</a>
-                <a href="https://linkedin.com/in/mhali-suhel-bb8597159" target="_blank">LinkedIn</a>
-                <a href="https://wa.me/971526539567" target="_blank">Phone: +971 52 653 9567</a>
                 <span>Location: Dubai, UAE</span>
             </div>
             <div class="cta-group">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=malisuhel06@gmail.com" target="_blank" class="btn btn-primary">Get In Touch</a>
+                <a href="https://wa.me/971526539567" target="_blank" class="btn btn-primary">Get In Touch</a>
                 <a href="https://linkedin.com/in/mhali-suhel-bb8597159" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
             </div>
         </div>
@@ -1010,7 +1011,7 @@
                     <h2>Let's Work Together</h2>
                     <p>I'm currently open to Finance, Accounting, Operations, and Administrative leadership roles in the UAE — on-site or hybrid.</p>
                     <div class="cta-group" style="justify-content: center;">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=malisuhel06@gmail.com" target="_blank" class="btn btn-primary">Get In Touch</a>
+                        <a href="https://wa.me/971526539567" target="_blank" class="btn btn-primary">Get In Touch</a>
                         <a href="https://linkedin.com/in/mhali-suhel-bb8597159" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
                     </div>
                 </div>
